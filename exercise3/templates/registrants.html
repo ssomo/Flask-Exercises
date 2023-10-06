@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block head%}
+<title>Exercise 3 - Registered Students</title>
+{% endblock %}
+
+{% block body%}
+<div class="container mt-4">
+    <h1 class="display-3">Registered Students</h1>
+    <p class="mt-4">The following students have registered for student organizations.</p>
+
+    <table class="table table-hover">
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Organization</th>
+        </tr>
+        <!-- Loop through the users and display their information-->
+        {% for name, org in users.items() %}
+            <tr>
+                <td>{{ name }}</td>
+                <td>{{ org }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</div>
+{% endblock %}

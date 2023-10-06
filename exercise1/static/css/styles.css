@@ -1,0 +1,11 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: rgb(229, 215, 215);
+    color: rgb(27, 7, 7);
+}
+
+.content{
+    margin: 5vh auto;
+    text-align: center;
+}
